@@ -7,7 +7,7 @@ Import-Module -Name $script:moduleHelperPath
 $script:localizedData = Get-LocalizedData -DefaultUICulture 'en-US'
 
 Function Get-TargetResource {
-
+    Assert-Module -ModuleName 'DHCPServer'
 }
 
 Function Set-TargetResource {
